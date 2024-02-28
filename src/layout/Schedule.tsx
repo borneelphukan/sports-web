@@ -64,12 +64,14 @@ const Schedule = () => {
                     onToggle={handleViewDropdownToggle}
                     placeholder="View" />
             </div>
+
             <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
-            <div className="text-xl font-semibold">Season {selectedSeason}</div>
+            
+            <span className="font-bold text-2xl">Season {selectedSeason}</span>
             
             <div className="my-5">
-                <div className="text-xl font-semibold flex justify-between">
-                    <span>January</span>
+                <div className="text-xl font-semibold flex justify-between items-center">
+                    <span className="font-bold text-2xl">January</span>
                     <Dropdown
                         options={weeks}
                         onSelect={handleWeekSelectJanuary}
@@ -77,11 +79,13 @@ const Schedule = () => {
                         onToggle={handleWeekDropdownToggleJanuary}
                         placeholder="Weeks" />
                 </div>
+
                 <TourCard imageUrl={"/tournaments/course1.jpeg"} startDate="2024-01-04" endDate="2024-01-07" tournament={"PGA Tour: The Sentry Tournament of Champions 2024"} description={"Plantation Course at Kapalua"} location="Kapalua, Maui, Hawaii, United States of America" winner="Chris Klark"/>   
             </div>
+            
             <div className="my-5">
                 <div className="text-xl font-semibold flex justify-between">
-                    <span>February</span>
+                    <span className="font-bold text-2xl">February</span>
                     <Dropdown
                         options={weeks}
                         onSelect={handleWeekSelectFebruary}
