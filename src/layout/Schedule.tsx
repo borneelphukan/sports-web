@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Dropdown from "@/components/buttons/dropdown/Dropdown";
 import { season, view, weeks } from "./core/constants";
 import TourCard from "@/components/cards/TourCard";
+import Carousel from "@/components/carousel/Carousel";
+
 
 const Schedule = () => {
     const [selectedSeason, setSelectedSeason] = useState<string>('');
@@ -51,6 +53,7 @@ const Schedule = () => {
 
     return (
         <>
+        <Carousel/>
             <div className="flex">
                 <Dropdown
                     options={season}
