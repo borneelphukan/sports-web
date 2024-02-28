@@ -11,7 +11,6 @@ export const season = [
 export const view = [
   { value: 'Upcoming', label: 'Upcoming' },
   { value: 'Completed', label: 'Completed' },
-  { value: 'Full Schedule', label: 'Full Schedule' },
   { value: 'Signature Events', label: 'Signature Events' },
 ];
 

@@ -10,9 +10,11 @@ type Props = {
   description: string;
   location: string;
   winner: string;
+  prizeMoney: string;
+  logoUrl: string;
 };
 
-const TourCard = ({ imageUrl, startDate, endDate, tournament, description, location, winner }: Props) => {
+const TourCard = ({ imageUrl, startDate, endDate, tournament, description, location, winner, prizeMoney, logoUrl }: Props) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const togglePopup = () => {
@@ -71,7 +73,14 @@ const TourCard = ({ imageUrl, startDate, endDate, tournament, description, locat
               <div className="justify-center">
                 <p className="text-gray-500">Winner</p>
                 <p className="inline-flex items-center text-sm font-normal">{winner}</p>
-                <p className="text-gray-500">$3,600,000</p>
+                <p className="text-gray-500">${prizeMoney}</p>
+                <Image
+              src={logoUrl}
+              alt="Blog Image"
+              width={450}
+              height={450}
+              className="w-28 h-28 mt-2"
+            />
               </div>
             </div>
           </div>

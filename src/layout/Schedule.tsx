@@ -34,13 +34,11 @@ const Schedule = () => {
     };
 
     const handleWeekSelectJanuary = (value: string) => {
-        // Handle selecting a week for January
-        // You can set state or perform any action here
+        
     };
 
     const handleWeekSelectFebruary = (value: string) => {
-        // Handle selecting a week for February
-        // You can set state or perform any action here
+        
     };
 
     const handleWeekDropdownToggleJanuary = () => {
@@ -83,7 +81,8 @@ const Schedule = () => {
                         placeholder="Weeks" />
                 </div>
 
-                <TourCard imageUrl={"/tournaments/course1.jpeg"} startDate="2024-01-04" endDate="2024-01-07" tournament={"PGA Tour: The Sentry Tournament of Champions 2024"} description={"Plantation Course at Kapalua"} location="Kapalua, Maui, Hawaii, United States of America" winner="Chris Klark"/>   
+                <TourCard imageUrl={"/tournaments/course1.jpeg"} startDate="2024-01-04" endDate="2024-01-07" tournament={"PGA Tour: The Sentry Tournament of Champions 2024"} description={"Plantation Course at Kapalua"} location="Kapalua, Maui, Hawaii, United States of America" winner="Chris Klark" prizeMoney="60,000,000" logoUrl="/tournaments/logo/logo1.jpeg"/>
+                <TourCard imageUrl={"/tournaments/course2.jpeg"} startDate="2024-01-11" endDate="2024-01-14" tournament={"PGA Tour: Sony Open in Hawaii 2024"} description={"Waialae Country Club"} location="Honolulu, Hawaii, United States of America" winner="Si Woo Kim" prizeMoney="56,000,000" logoUrl="/tournaments/logo/logo2.jpeg"/>      
             </div>
             
             <div className="my-5">
@@ -96,7 +95,7 @@ const Schedule = () => {
                         onToggle={handleWeekDropdownToggleFebruary}
                         placeholder="Weeks" />
                 </div>
-                <TourCard imageUrl={"/tournaments/course2.jpeg"} startDate="2024-02-28" endDate="2024-02-28" tournament={"Sony Open in Hawaii"} description={"Waialae Country Club"} location="Honolulu, Hawaii, United States of America" winner="Grayson Murray"/>   
+                <TourCard imageUrl={"/tournaments/course3.png"} startDate="2024-02-01" endDate="2024-02-04" tournament={"PGA Tour: AT&T Pebble Beach Pro-Am"} description={"Pebble Beach Golf Links"} location="Pebble Beach, California, United States of America" winner="Justin Rose" prizeMoney="20,000,000" logoUrl="/tournaments/logo/logo5.jpeg"/>   
             </div>
         </>
     );
